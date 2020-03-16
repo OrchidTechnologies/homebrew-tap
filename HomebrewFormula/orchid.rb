@@ -5,6 +5,12 @@ class Orchid < Formula
   version "0.9.5.p222.gb223f47"
   head "https://github.com/OrchidTechnologies/orchid.git", :using => :git
 
+  bottle do
+    root_url "https://dl.bintray.com/orchidprotocol/bottles"
+    cellar :any_skip_relocation
+    sha256 "e1854218effa2cc622816b395db6f3ef3a76c369916b5346eb8b3a5759331b0f" => :catalina
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gettext" => :build
