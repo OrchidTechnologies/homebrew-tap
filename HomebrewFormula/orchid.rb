@@ -7,11 +7,11 @@ class Orchid < Formula
   revision 1
   head "https://github.com/OrchidTechnologies/orchid.git", :using => :git
 
-
   bottle do
     root_url "https://dl.bintray.com/orchidprotocol/bottles"
-    cellar :any_skip_relocation
-    sha256 "e1854218effa2cc622816b395db6f3ef3a76c369916b5346eb8b3a5759331b0f" => :catalina
+    cellar :any
+    rebuild 1
+    sha256 "f3ec3cadfecfc9efd8b1f8b600f0132b0c1f6c56ad977ce31782a243f594848f" => :catalina
   end
 
   depends_on "autoconf" => :build
